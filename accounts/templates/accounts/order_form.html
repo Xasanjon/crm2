@@ -1,0 +1,23 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block title %} Order Form {% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-6">
+    <div class="card card-body">
+      <form action="" method="POST">
+        {% csrf_token %}
+        {{formset.management_form}}
+        {% for form in formset %}
+        <p style="text-transform: capitalize; font-weight:bold;">{{form.name}}</p>
+        {{form}}
+        <br>
+        <hr>
+        {% endfor %}
+        <input type="submit" name="Submit" class="btn btn-outline-dark">
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
