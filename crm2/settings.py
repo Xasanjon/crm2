@@ -140,4 +140,4 @@ EMAIL_USE_SSL = True    # use port 465
 EMAIL_USE_TLS = False    # use port 587
 EMAIL_PORT = 465  # OR 587
 EMAIL_HOST_USER = 'xasanboy99akaxon@gmail.com'  # your email
-EMAIL_HOST_PASSWORD = 'patinkat6shakdanb6lgan'  # your email password
+EMAIL_HOST_PASSWORD = ''  # your email password
