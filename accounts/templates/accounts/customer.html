@@ -42,7 +42,22 @@
   <div class="col">
     <div class="card card-body">
       <form action="" method="get">
-       <div>{{myFilter.form}}</div>
+        <table class="table table-sm">
+          <tr>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Note</th>
+            <th>Start date</th>
+            <th>End date</th>
+            
+          </tr>
+          <tr>
+            {% for filter in myFilter.form  %}
+            <td>{{filter}}</td>
+            {% endfor %}
+          </tr>
+        </table>
+       <!-- <div>{{myFilter.form}}</div> -->
         <button type="submit" class="btn btn-primary">Search</button>
       </form>
     </div>
